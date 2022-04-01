@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Option.css'
 const Option = ({ option, answer }) => {
     const [optionStyle,setOptionStyle] =  useState('')
     
@@ -15,10 +15,10 @@ const Option = ({ option, answer }) => {
         }
 
     }
-    console.log(optionStyle)
+    
     
     return (
-        <div onClick={answerListener} className={'m-2 border border-2 p-1 '+optionStyle}>
+        <div onClick={answerListener} className={'m-2 border border-2 p-1 single-option '+optionStyle}>
             {
                 option
             }
